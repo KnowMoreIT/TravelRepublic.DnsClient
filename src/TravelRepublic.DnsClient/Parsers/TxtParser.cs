@@ -50,7 +50,7 @@ namespace TravelRepublic.DnsClient.Parsers
         public Record ParseRecord(RecordHeader header, ref MemoryStream ms)
         {
             var text = _parser.ParseText(ref ms);
-            return new TxtRecord(text, "text: " + text);
+            return new TxtRecord(text, text);
         }
     }
 }

@@ -34,7 +34,7 @@
  **********************************************************************/
 namespace TravelRepublic.DnsClient.Records
 {
-    class MxRecord :
+    public class MxRecord :
         Record
     {
         // For MX
